@@ -9,8 +9,11 @@ Hi {{ user.username }}!
 <p><a href="{% url 'logout' %}">Log Out</a></p>
 <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
 {% else %}
+<a href="{% url 'login' %}">Log In</a>
+<a href="{% url 'signup' %}">Sign Up</a><br>
 <p>You are not logged in</p>
-<a href="{% url 'login' %}">Log In</a><br>
-<a href="{% url 'signup' %}">Sign Up</a>
 {% endif %}
+<h6>Apps:</h6>
+<a href="{% url 'hello:index' %}">Task</a><br>
+<a href="{% url 'isNewyear:index' %}">Is New Year</a><br>
 {% endblock %}

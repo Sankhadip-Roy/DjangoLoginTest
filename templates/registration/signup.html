@@ -8,6 +8,16 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign Up</button>
+    <button style="  font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    background: #731867;
+    width: 19%;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;" type="submit">Sign Up</button>
 </form>
 {% endblock %}
